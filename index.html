@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid demonstration</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" >
+
+</head>
+<body>
+    <header class="siteHeader">
+        <a href="./" class="siteHeader__brand"><img src="img/Logo.png" alt="Logo"></a>
+        <button class="burgerMenuButton">
+            <i data-feather="menu"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="primaryNavigation" aria-hidden="true">
+            <a href="#content" class="sr-only">Spring til indholdet</a>
+
+            <menu class="primaryNavigation__menu">
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Forside</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Fester</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Firma events</a>
+                </li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation__link">Kontakt</a></li>
+            </menu>
+
+
+            <form class="primaryNavigation__form" action="">
+                <h1 class="contact">Kontakt os</h1>
+
+                <div class="form__field">
+                    <label for="inputName"><i data-feather="user"></i> </label>
+                    <input type="text" class="form__input" id="inputName" name="navn" placeholder="Skriv dit navn">
+                    <span class="form__message" id="messageName"></span>
+                </div>
+
+                <div class="form__field">
+                    <label for="inputEmail"><i data-feather="mail"></i> </label>
+                    <input type="email" class="form__input" id="inputEmail" name="email" placeholder="Skriv din email">
+                    <span class="form__message" id="messageEmail"></span>
+                </div>
+
+                <div class="form__field">
+                    <label for="inputTlf"><i data-feather="phone"></i></label>
+                    <input type="number" class="form__input" id="inputTlf" name="tlf"
+                        placeholder="Skriv dit telefonnummer">
+                    <span class="form__message" id="messageTlf"></span>
+                </div>
+
+                <div class="form__field">
+                    <label for="inputSubmit"><i data-feather="send"></i></label>
+                    <input type="submit" class="form__submit" id="inputSubmit" value="Send">
+                    <span class="form__message"></span>
+                </div>
+
+            </form>
+        </nav>
+
+    </header>
+
+    <!--------------------------------BANNER / SITE BANNER---------------------------->
+    <section class="siteBanner">
+
+        <img class="siteBanner__image" src="img/outdoorCooking__3.jpeg" alt="">
+        <article class="siteBanner__text">
+            <h1>Teambuilding</h1>
+            <h3>Jagtanekdoter, bramfri råvarer og madlavning i det fri.</h3>
+            <p>Mød naturmanden Jørgen Skouboe og kokken Nikolai Kirk /n fra det populære tv-program "Nak og Æd"</p>
+            <a href="#"><button class="actionButton">Læs mere</button></a>
+        </article>
+    </section>
+
+
+    <!--------------------------------CARDS MOBILEVIEW---------------------------->
+
+    <section class="cards__mobileView">
+        <article class="card__mobileView">
+            <div class="cardText">
+                <h3>Erfaring og Engagement</h3>
+                <p>Event Centrum har mange års erfaring med udvikling og afholdelse af både store og små arrangementer.
+                </p>
+                <p>Hos Event Centrum stræber vi efter, at vores kunder kommer til at opleve glæde og motivation ved
+                    hjælp af ekstraordinære oplevelser. Vi vil med vores professionalisme og gode historier skabe
+                    grobund for at styrke relationer mellem ledelse og medarbejdere, virksomheden og kunderne.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card__mobileView">
+            <img src="img/COLOURBOX4259254-card2.jpg" alt="konference">
+            <div class="cardText">
+                <h3>Reception</h3>
+                <p>Vi sørger for alt i forbindelse med planlægning og afvikling af jeres reception.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <div class="cardEvents__mobileView">
+            <div class="cardText">
+                <h3>Firma-events</h3>
+                <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer.</p>
+                <p>Vi tilbyder en række event-pakker som imødekommer de flestes behov.</p>
+            </div>
+            <article id="card__silver">
+                <div class="cardText">
+                    <h3>Møde/konference - Sølv</h3>
+                    <h1>kr. <span class="cardText__span">8.000,- </span></h1>
+                    <p>1 dags møde eller konference-pakke bestående af:</p>
+                    <ul>
+                        <li>Leje af Event Centrums konference-sal beliggende centralt i Roskilde</li>
+                        <li>Kaffe og te ved ankomst</li>
+                        <li>Stående frokost i foyeren med sandwich og 1 stk. øl eller vand pr. person</li>
+                    </ul>
+                    <a href="#"><button class="actionButton">Hent tilbud</button></a>
+                </div>
+            </article>
+
+            <article id="card__gold">
+                <div class="cardText">
+                    <h3>Møde/konference - Guld</h3>
+                    <h1 class="cardText__xl">kr. 14.000,- </h1>
+                </div>
+                <p>1 dags møde eller konference-pakke som sølv-pakken med følgende tiltag:</p>
+                <ul>
+                    <li>Morgenmad med kaffe og te ved ankomst</li>
+                    <li>Brug af gruppelokaler i Event Centrums Konference-faciliteter</li>
+                    <li>Frokost-buffet i separat lokale incl. 1 stk. øl eller vand pr. person</li>
+                </ul>
+                <a href="#"><button class="actionButton">Hent tilbud</button></a>
+
+            </article>
+        </div>
+
+
+    </section>
+
+    <!--------------------------------CARDS DESKTOPVIEW---------------------------->
+    <dir class="sectionHeadline">
+        <h1>Andre Events</h1>
+        <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer. <br> Vi afholder gerne et
+            indledende og uforpligtende møde, så vi kan imødekomme jeres behov bedst muligt.</p>
+
+    </dir>
+    <section class="cards__desktopView">
+
+
+        <article class="card">
+            <img class="card-img" src="img/COLOURBOX1126435-card1.jpg" alt="konference">
+            <div class="cardText">
+                <h3>Konference</h3>
+                <p>Konference eller seminar i professionelle og veludstyrede omgivelser</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="img/COLOURBOX4259254-card2.jpg" alt="reception">
+            <div class="cardText">
+                <h3>Reception</h3>
+                <p>Vi sørger for alt i forbindelse med planlægning og afvikling af jeres reception.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="img/biergarten-card3.jpg" alt="Oktoberfest">
+            <div class="cardText">
+                <h3>Oktoberfest</h3>
+                <p>Oktoberfest-stemning med godt øl, saltkringler og solid mad</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="img/COLOURBOX3181463-card4.jpg" alt="Julefrokost">
+            <div class="cardText">
+                <h3>Julefrokost</h3>
+                <p>Julefest med alt hvad der hører til. Tag bare nissehuen på!.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="img/COLOURBOX3447942-card5.jpg" alt="Middelalder">
+            <div class="cardText">
+                <h3>Middelalder</h3>
+                <p>Turnering og telte, helstegt pattegris og mjød.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+        <article class="card">
+            <img class="card-img" src="img/COLOURBOX2388277-card6.jpg" alt="Action">
+            <div class="cardText">
+                <h3>Action</h3>
+                <p>James Bond, Gangster eller Le Mans? Vi udvikler gerne et tema specielt til jer.</p>
+                <a href="#"><button class="actionButton">Læs mere</button></a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
+
+
+<!--------------------------------CAROUSEL---------------------------->
+
+<section class="container">
+
+    <div class="carousel">
+        <button class="carousel__backButton">&lsaquo;</button>
+        <img src="" alt="" class="carousel__image">
+        <button class="carousel__forwardButton" data-key="39">&rsaquo;</button>
+        <!--div class="image__textContainer>
+                <h2 class="image__head2">Event Centrum skaber</h2>
+                <h1 class="image__h1">DEN HELT RIGTIGE</h1>
+                <p class="image__text"></p>
+                <button class="carousel__actionButton">Læs mere</button>
+            </div-->
+            <div class="pagination"></div>
+    </div>
+   
+    <div class="arrow-key-container">
+  
+        <div class="carousel__backButton" data-key="37"></div>
+        
+        <div class="carousel__forwardButton" data-key="39"></div>
+      </div>
+</section>
+
+
+<!--------------------------------FOOTER------------------------------------------>
+
+<footer class="siteFooter">
+
+    <div class="info">
+        <h2>Kontakt os</h2>
+        <p>Vi stræber efter at vores kunder kommer til at opleve glæde og motivation ved hjælp af ekstraordinære
+            oplevelser. For en uforpligtende samtale om mulighederne i jeres arrangement.</p>
+
+        <h2>Følg os:</h2>
+        <ul class="soMe__list">
+            <li><i data-feather="instagram"></i></li>
+            <li><i data-feather="youtube"></i></li>
+            <li><i data-feather="facebook"></i></li>
+        </ul>
+
+
+
+    </div>
+
+
+    <form class="form" action="">
+        <h2 class="contact">Send os et par linjer</h2>
+
+        <div class="form__field">
+            <label for="inputName"></label>
+            <input type="text" class="form__input" id="inputName" name="navn" placeholder="Skriv dit navn">
+            <span class="form__message" id="messageName"></span>
+        </div>
+
+        <div class="form__field">
+            <label for="inputEmail"></label>
+            <input type="email" class="form__input" id="inputEmail" name="email" placeholder="Skriv din email">
+            <span class="form__message" id="messageEmail"></span>
+        </div>
+
+        <div class="form__field">
+            <label for="text"></label>
+            <input type="text" class="form__input" id="inputText" name="text" placeholder="Skriv din besked">
+            <span class="form__message" id="messageText"></span>
+        </div>
+
+        <div class="form__field">
+            <label for="inputSubmit"></i></label>
+            <input type="submit" class="form__submit" id="inputSubmit" value="Send">
+            <span class="form__message"></span>
+        </div>
+
+        <!--
+            <i data-feather="mail"></i>
+        <div>
+            <label for="">
+            <textarea class="inputField__text" name="" id="" cols="30" rows="10"></textarea>
+            </label>
+            <span class="inputField__feedback"></span>
+        </div> 
+        
+        -->
+
+    </form>
+
+
+
+
+
+</footer>
+
+
+
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace()
+</script>
+<script src="assets/scripts/burgermenu.js"></script>
+<script src="assets/scripts/carousel.js"></script>
+<script src="assets/scripts/contact.js"></script>
+<script src="assets/scripts/contactForm.js"></script>
+
+</body>
+</html>

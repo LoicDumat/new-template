@@ -1,0 +1,33 @@
+/*
+    the list class is in it self empty but represents the name of a module where rules for unordred lists apply.
+    this class will be repeated twice in different positions illustrating the use of modules
+*/
+.lists ul{
+    list-style: none;
+
+    font-size: 0.8em;
+
+    border-bottom: var(--border-thin);
+}
+
+.lists li{
+    padding-bottom: 1rem;
+}
+/*
+    "Hack" to select every h2 in any section where h2 is imidiatly followed by a ul.
+
+    if section has a h2  with imidiate ul sibling
+        select h2 within the section
+
+*/
+.lists:has(h2 + ul) h2{
+    display: block;
+    padding-bottom: 1em;
+    
+    font-style: italic;
+    font-size: 1.8em;
+    text-transform: lowercase;
+    font-weight: 300;
+}
+
+

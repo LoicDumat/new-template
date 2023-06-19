@@ -1,0 +1,139 @@
+.cards__desktopView {
+    margin: 2rem 4rem 4rem 4rem;
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.cardText {
+    padding: 20px;
+    margin-bottom: 1rem;
+    background-color: var(mediumTheme);
+}
+.sectionHeadline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 6rem 1rem 6rem;
+
+}
+
+.cards__mobileView {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.cards__mobileView>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cards__mobileView>article img {
+    max-width: 100%;
+
+}
+
+.cardText__xl. {
+    font-size: 60px;
+}
+.cards__mobileView .cardText {
+    padding: 20px;
+}
+
+.cardEvents__mobileView {
+    background-image: url(/img/dark-blue-gradient-background-abstract.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    text-align: center;
+    color: #FFF;
+
+}
+
+#card__silver {
+    padding: 20px;
+    background: rgba(28, 195, 246, 0.5);
+    margin: 1rem;
+    border-radius: 10%;
+    color: #fff;
+
+
+
+}
+
+#card__gold {
+    padding: 20px;
+    background: rgba(28, 195, 246, 0.5);
+    margin: 1rem;
+    border-radius: 10%;
+    color: #fff;
+
+}
+
+#card__gold>.cardText {
+    color: gold;
+
+}
+
+.actionButton{
+    color: var(--actionColor);
+    border: 3px solid var(--actionColor);
+    border-radius: 5%;
+    height: 2rem;
+    width: 5rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.card button:hover{
+    color: #fff;
+    background-color: var(--actionColor);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 668px) {
+    .cards__desktopView {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+
+    .cards__mobileView {
+        display: none;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1050px) {
+    .cards__desktopView {
+        margin: 4rem 12rem 4rem 12rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    
+
+    }
+}

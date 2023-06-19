@@ -1,0 +1,33 @@
+:root{
+    --color-base: black;
+    --color-accent: rgb(95, 158, 160);
+    --color-light: white;
+
+    --gradient-dark: rgba(52, 107, 108, 0.474);
+    --gradient-light: rgba(155, 140, 105, 0.3);
+    
+    --font-base:''Light', 'serif;
+    --font-accent: 'Dancing Script', cursive;
+
+    --border-thin: thin solid var(--color-base);
+}
+
+
+/*
+:root{
+
+    --darkTheme:#3B4C5C;
+
+    --darkerTheme:#262F38;
+    
+    --lightTheme: #fff;
+
+    --mediumTheme: #F3F4F5; 
+
+    --lightTheme__text: #3B4C5C;
+
+    --mediumTheme__text: #A2B1BF;
+
+    --actionColor: #E74C3C;
+    
+    }*/

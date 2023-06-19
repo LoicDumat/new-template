@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-white);
+    background: radial-gradient(circle, var(--gradient-dark) 0%, var(--gradient-light) 100%);
+
+    font-family: var(--font-base);
+    color: var(--color-base);
+    text-transform: uppercase;
+
+    padding-top: 2em;
+    padding-bottom: 2em;*/
+
+    overflow-x: hidden;   
+    width: 100%;
+           
+}
+
+
+
+a{
+    color: var(--color-base);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color-accent);
+}
+
+
+    
+    
+    
+    
+ 
+    
+    
+    

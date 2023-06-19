@@ -1,0 +1,30 @@
+
+
+
+.sr-only {
+
+    visibility: hidden;
+    
+    display: block;
+    
+    height: 1px;
+    
+    width: 1px;
+    
+    overflow: hidden;
+    
+    }
+
+
+
+/*
+.subject{
+    font-size: clamp(0.8em, 2vw, 2em);
+}
+
+.subject span{
+    display: block;
+    
+    font-weight: 300;
+}
+*/
